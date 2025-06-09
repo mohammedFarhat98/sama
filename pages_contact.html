@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--================ Basic page needs ================-->
+    <title>SAMA</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--================ Mobile specific metas ================-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--================ Favicon ================-->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!--================ Google web fonts ================-->
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700%7CRoboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <!--================ Vendor CSS ================-->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/monkeysan-tooltip/monkeysan-jquery-tooltip.css">
+    <link rel="stylesheet" href="vendors/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="vendors/arcticmodal/jquery.arcticmodal-0.3.css">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/animate.min.css">
+    <!--================ Theme CSS ================-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rtl.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--================ Vendor JS ================-->
+  </head>
+  <body class="mad-body--scheme-brown contact-page">
+
+    <div class="mad-preloader"></div>
+    <div id="mad-page-wrapper" class="mad-page-wrapper">
+      
+ <!--================ Header ================-->
+ <div id="header-placeholder"></div>
+
+ <script>
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header-placeholder").innerHTML = data;
+
+      // ✅ بعد إدراج الهيدر في الصفحة، نطبق التعديل:
+      const path = window.location.pathname;
+      if (path.includes("pages_about.html") || path.includes("pages_contact.html")) {
+        document.querySelectorAll(
+          ".mad-navigation a, \
+           .mad-sub-navigation a:hover, \
+           .mad-header-menu-btn, \
+           .mad-weather-indicator sup span, \
+           .mad-icon-btn, \
+           .mad-dropdown--languages .mad-dropdown-title"
+        ).forEach(el => {
+          el.style.color = "#ffffff";
+        });
+      }
+    });
+</script>
+
+
+
+
+
+
+<!--================ End of Header ================-->
+      <!--================ Breadcrumb ================-->
+      <div class="mad-breadcrumb with-bg">
+        <img src="images/1920x897_bg1.jpg" alt="">
+        <div class="container">
+          <h1 class="mad-page-title mad-title-with-line">تواصل معنا</h1>
+          <nav class="mad-breadcrumb-path"><span><a href="index.html">الرئيسية</a></span>/<span>تواصل معنا</span>
+          </nav>
+        </div>
+      </div>
+      <!--================ End of Breadcrumb ================-->
+      <div class="mad-content no-pd">
+        <div class="container medium-width">
+          <div class="mad-section">
+            <div class="row type-3">
+              <div class="col-lg-5">
+                <h2 class="mad-page-title">معلومات الاتصال</h2>
+                <!--================ Icon Boxes ================-->
+                <div class="mad-icon-boxes hr-type">
+                  <div class="mad-col">
+                    <!--================ Icon Box ================-->
+                    <article class="mad-icon-box">
+                      <i class="mad-icon-box-icon"><img class="svg" src="Kunstwerk_svg_icons/map.svg" alt=""></i>
+                      <div class="mad-icon-box-content">
+                        <span>موقعنا</span>
+                        <h2 class="mad-icon-box-title">العراق - بغداد</h2>
+                      </div>
+                    </article>
+                    <!--================ End of Icon Box ================-->
+                  </div>
+                  <div class="mad-col">
+                    <!--================ Icon Box ================-->
+                    <article class="mad-icon-box">
+                      <i class="mad-icon-box-icon"><img class="svg" src="Kunstwerk_svg_icons/phone.svg" alt=""></i>
+                      <div class="mad-icon-box-content">
+                        <span>اتصل بنا</span>
+                        <h2 class="mad-icon-box-title">+964 750 559 6580 <br>
+                          +964 750 603 6035</h2>
+                      </div>
+                    </article>
+                    <!--================ End of Icon Box ================-->
+                  </div>
+                  <div class="mad-col">
+                    <!--================ Icon Box ================-->
+                    <article class="mad-icon-box">
+                      <i class="mad-icon-box-icon"><img class="svg" src="Kunstwerk_svg_icons/envelope.svg" alt=""></i>
+                      <div class="mad-icon-box-content">
+                        <span>البريد الالكتروني</span>
+                        <h2 class="mad-icon-box-title">QASSARALAM609@gmail.com</h2>
+                      </div>
+                    </article>
+                    <!--================ End of Icon Box ================-->
+                  </div>
+                  <div class="mad-col">
+                    <!--================ Icon Box ================-->
+                    <article class="mad-icon-box">
+                      <i class="mad-icon-box-icon"><img class="svg" src="Kunstwerk_svg_icons/clock.svg" alt=""></i>
+                      <div class="mad-icon-box-content">
+                        <span>الساعات</span>
+                        <h2 class="mad-icon-box-title">الإثنين – الجمعة: 9:00 – 18:00 <br>
+                          السبت: 9:00 – 13:00</h2>
+                      </div>
+                    </article>
+                    <!--================ End of Icon Box ================-->
+                  </div>
+                  <div class="mad-col">
+                    <!--================ Icon Box ================-->
+                    <article class="mad-icon-box">
+                      <i class="mad-icon-box-icon"><img class="svg" src="Kunstwerk_svg_icons/globe.svg" alt=""></i>
+                      <div class="mad-icon-box-content">
+                        <span>Social media</span>
+                        <ul class="mad-social-icons">
+                          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                      </div>
+                    </article>
+                    <!--================ End of Icon Box ================-->
+                  </div>
+                </div>
+                <!--================ End of Icon Boxes ================-->
+              </div>
+              <div class="col-lg-7">
+                <h2 class="mad-page-title">لا تتردد في مراسلتنا</h2>
+                <p>نحن هنا لخدمتك والإجابة على استفساراتك بأسرع وقت. لا تتردد في الاتصال</p>
+                <form novalidate class="mad-contact-form mad-msg-form">
+                  <input type="text" id="cf_name" name="cf_name" required class="form-control" placeholder="الاسم الكامل">
+                  <input type="email" id="cf_email" name="cf_email" required class="form-control" placeholder="البريد الالكتروني">
+                  <input type="text" id="message" name="cf_message" required class="form-control" placeholder="الرسالة">
+                  <button type="submit" class="btn btn-style-3"> إرسال الرسالة</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--================ Footer ================-->
+      <div id="footer-placeholder"></div>
+
+    <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+      <!--================ End of Footer ================-->
+    </div>
+    <script src="vendors/modernizr.js"></script>
+    <script src="vendors/jquery-3.3.1.min.js"></script>
+    <script src="vendors/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="vendors/jquery.easing.1.3.min.js"></script>
+    <script src="vendors/monkeysan.jquery.nav.1.0.min.js"></script>
+    <script src="vendors/monkeysan.validator.min.js"></script>
+    <script src="vendors/handlebars-v4.0.5.min.js"></script>
+    <script src="vendors/retina.min.js"></script>
+    <script src="js/modules/mad.contact-form.js"></script>
+    <script src="js/modules/mad.newsletter-form.min.js"></script>
+    <script src="js/modules/mad.alert-box.min.js"></script>
+    <script src="js/modules/mad.sticky-header-section.min.js"></script>
+    <script src="js/mad.app.js"></script>
+  </body>
+</html>

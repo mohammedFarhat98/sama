@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--================ Basic page needs ================-->
+    <title>SAMA</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--================ Mobile specific metas ================-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--================ Favicon ================-->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!--================ Google web fonts ================-->
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700%7CRoboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <!--================ Vendor CSS ================-->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/monkeysan-tooltip/monkeysan-jquery-tooltip.css">
+    <link rel="stylesheet" href="vendors/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="vendors/arcticmodal/jquery.arcticmodal-0.3.css">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/animate.min.css">
+    <!--================ Theme CSS ================-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rtl.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--================ Vendor JS ================-->
+  </head>
+  <body class="mad-body--scheme-brown about-page" >
+    <div class="mad-preloader"></div>
+    <div id="mad-page-wrapper" class="mad-page-wrapper">
+      
+ <!--================ Header ================-->
+ <div id="header-placeholder"></div>
+ <script>
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header-placeholder").innerHTML = data;
+
+      // ✅ بعد إدراج الهيدر في الصفحة، نطبق التعديل:
+      const path = window.location.pathname;
+      if (path.includes("pages_about.html") || path.includes("pages_contact.html")) {
+        document.querySelectorAll(
+          ".mad-navigation a, \
+           .mad-sub-navigation a:hover, \
+           .mad-header-menu-btn, \
+           .mad-weather-indicator sup span, \
+           .mad-icon-btn, \
+           .mad-dropdown--languages .mad-dropdown-title"
+        ).forEach(el => {
+          el.style.color = "#ffffff";
+        });
+      }
+    });
+</script>
+
+
+
+
+
+
+<!--================ End of Header ================-->
+      <!--================ Breadcrumb ================-->
+      <div class="mad-breadcrumb with-bg pull-top">
+        <img src="images/1920x1141_bg1.jpg" alt="">
+        <div class="container">
+          <h1 class="mad-page-title mad-title-with-line">من نحن</h1>
+          <nav class="mad-breadcrumb-path"><span><a href="index.html">الرئيسية</a></span>/<span>من نحن</span>
+          </nav>
+        </div>
+      </div>
+      <!--================ End of Breadcrumb ================-->
+      <div class="mad-content no-pd">
+        <div class="mad-section with-decoration">
+          <div class="container short-width">
+            <div class="content-element">
+              <div class="content-element-6">
+                <h2 class="mad-page-title">سما قصر الأمير للذهب والمجوهرات</h2>
+ 
+
+                <p class="text-justify text-end lh-lg">نحن في "سما قصر الأمير للذهب والمجوهرات"، شركة عراقية ذات مسؤولية محدودة، متخصصة في استيراد الذهب
+والفضة والمجوهرات من األسواق العالمية. نضع بين يدي عمالئنا منتجات مختارة بعناية، تتميز باألصالة والجودة العالية،
+مع التزامنا الكامل بأعلى معايير الشفافية واالحترافية في جميع تعامالتنا.</p>
+              </div>
+              <div class="content-element-6">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h5 class="mad-page-title">رؤيتنا</h5>
+                    <p class="text-justify text-end lh-lg">نطمح إلى الريادة في سوق الذهب والمجوهرات داخل العراق، من خالل بناء عالقات تجارية طويلة األمد، وتوفير منتجات
+                      استثنائية تلبي احتياجات األسواق المحلية واإلقليمية.</p>
+                  </div>
+                  <div class="col-md-6">
+                    <h5 class="mad-page-title">مهمتنا</h5>
+                    <p class="text-justify text-end lh-lg">استيراد الذهب والمجوهرات من موردين موثوقين عالميًا.
+                      تقديم خدمات موثقة وسريعة للتجار والمستوردين المحليين.
+                      ضمان الجودة العالية وااللتزام بالمواصفات العالمية.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-element">
+              <div class="content-element-9">
+                <h2 class="mad-page-title">لماذا تختارنا؟</h2>
+                <div class="text-justify text-end lh-lg">
+                  <p>
+                    نحن نقدم أكثر من مجرد منتجات، نحن نوفر شراكة تجارية موثوقة تقوم على النزاهة والتميز. نضمن لعملائنا:
+                  </p>
+                  <ul style="padding-right: 20px; list-style: none;">
+                    <li>✅ جودة معتمدة وموثقة</li>
+                    <li>✅ التزام بالمواعيد والتسليم</li>
+                    <li>✅ أسعار منافسة وخيارات مرنة</li>
+                    <li>✅ فريق دعم متخصص ومتابعة مستمرة</li>
+                  </ul>
+                </div>
+                
+                
+              </div>
+              <div class="content-element-11">
+                <!--================ Counters ================-->
+                <div class="mad-counters no-icons item-col-4">
+                  <div class="mad-col">
+                    <div class="mad-counter">
+                      <div class="mad-counter-inner">
+                        <div class="mad-counter-icon"><img class="svg" src="Kunstwerk_svg_icons/coins.svg" alt=""></div>
+                        <div class="mad-counter-content">
+                          <div aria-labelledby="counter-1" class="mad-counter-count">10</div>
+                          <div id="counter-1" class="mad-counter-title">سنوات خبرة</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mad-col">
+                    <div class="mad-counter">
+                      <div class="mad-counter-inner">
+                        <div class="mad-counter-icon"><img class="svg" src="Kunstwerk_svg_icons/coins.svg" alt=""></div>
+                        <div class="mad-counter-content">
+                          <div aria-labelledby="counter-2" class="mad-counter-count">2000+</div>
+                          <div id="counter-2" class="mad-counter-title">آلاف العملاء واثقين بنا</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mad-col">
+                    <div class="mad-counter">
+                      <div class="mad-counter-inner">
+                        <div class="mad-counter-icon"><img class="svg" src="Kunstwerk_svg_icons/coins.svg" alt=""></div>
+                        <div class="mad-counter-content">
+                          <div aria-labelledby="counter-3" class="mad-counter-count">+200</div>
+                          <div id="counter-3" class="mad-counter-title">أكثر من 200 تصميم مميز</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mad-col">
+                    <div class="mad-counter">
+                      <div class="mad-counter-inner">
+                        <div class="mad-counter-icon"><img class="svg" src="Kunstwerk_svg_icons/coins.svg" alt=""></div>
+                        <div class="mad-counter-content">
+                          <div aria-labelledby="counter-4" class="mad-counter-count">100%</div>
+                          <div id="counter-4" class="mad-counter-title">جودة لا مثيل لها</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--================ End of Counters ================-->
+              </div>
+              <div class="content-element-6">
+                <div class="mad-testimonials style-2 mad-bg2 no-cat">
+                  <div class="mad-grid mad-grid--cols-1 owl-carousel owl-dots owl-dots-style-2">
+                    <div class="mad-grid-item">
+                      <!--================ Testimonial ================-->
+                      <div class="mad-testimonial">
+                        <div class="mad-testiomonial-info">
+                          <blockquote class="mad-blockquote--unstyled text-end lh-lg" style="list-style: none;">
+                            <p>خدمة التجار والمعارض</p>
+                            <p>
+                              نتعامل مع نخبة من تجار الذهب المحليين ونوفر لهم دعمًا لوجستيًا وخدمات استيراد سريعة، كما نوفر خدمات خاصة للمعارض والمتاجر:
+                            </p>
+                            <ul style="padding-right: 20px; list-style: none;">
+                              <li>🛎️ حجوزات مسبقة</li>
+                              <li>✏️ تصاميم حسب الطلب</li>
+                              <li>📢 دعم بالإعلانات والبروشورات</li>
+                              <li>🏷️ عروض أسعار خاصة للكميات الكبيرة</li>
+                            </ul>
+                          </blockquote>
+                          
+                        </div>
+                        <div class="mad-author">
+                          <div class="mad-author-info">
+                            <cite id="testimonial-cite-1">خدمة التجار والمعارض</cite>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <!--================ End of Testimonial ================-->
+                    </div>
+                    <div class="mad-grid-item">
+                      <!--================ Testimonial ================-->
+                      <div class="mad-testimonial">
+                        <div class="mad-testiomonial-info">
+                          <blockquote aria-labelledby="testimonial-cite-2" class="mad-blockquote--unstyled text-end lh-lg" style="list-style: none;">
+                            <p>نستورد منتجاتنا من كبرى شركات الذهب في:</p>
+                            <ul style="padding-right: 20px; list-style: none;">
+                              <li>🇦🇪 الإمارات</li>
+                              <li>🇸🇦 السعودية</li>
+                              <li>🇰🇼 الكويت</li>
+                              <li>🇮🇹 إيطاليا</li>
+                              <li>🇲🇾 ماليزيا</li>
+                              <li>🇹🇷 تركيا</li>
+                            </ul>
+                            <p>ونعمل على تطوير شبكة علاقات دولية قوية تعزز ثقة عملائنا.</p>
+                          </blockquote>
+                          
+                        </div>
+                        <div class="mad-author">
+                          <div class="mad-author-info">
+                            <cite id="testimonial-cite-1">شركاؤنا العالميون </cite>
+                           
+                          </div>
+                        </div>
+                      </div>
+                      <!--================ End of Testimonial ================-->
+                    </div>
+                    <div class="mad-grid-item">
+                      <!--================ Testimonial ================-->
+                      <div class="mad-testimonial">
+                        <div class="mad-testiomonial-info">
+                          <blockquote aria-labelledby="testimonial-cite-1" class="mad-blockquote--unstyled text-end lh-lg" style="list-style: none;">
+                            <p>نقوم بجلب الذهب والمجوهرات من مصادر موثوقة:</p>
+                            <ul style="padding-right: 20px; list-style: none;">
+                              <li>✅ فواتير أصلية</li>
+                              <li>✅ توثيق العيار وختم الدولة المصنعة</li>
+                              <li>✅ فحص مخبري محلي عند الوصول (عند الطلب)</li>
+                              <li>✅ شهادات المنشأ</li>
+                            </ul>
+                          </blockquote>
+                          
+                        </div>
+                        <div class="mad-author">
+                          <div class="mad-author-info">
+                            <cite id="testimonial-cite-1">الإستيراد والتوثيق</cite>
+                           
+                          </div>
+                        </div>
+                      </div>
+                      <!--================ End of Testimonial ================-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="images/1920x987_bg1.jpg" alt="">
+        <div class="mad-section with-decoration decor-size-2">
+          <div class="container short-width">
+        
+            <!--================ Gallery ================-->
+
+            <div class="content-element-9">
+              <h5 class="mad-page-title">عمالؤنا</h5>
+              <div class="text-justify text-end lh-lg">
+                <p>
+                  نفتخر بخدمة نخبة من التجار والشركات في العراق، من شماله إلى جنوبه، ونبني عالقات تجارية طويلة األمد تقوم على الثقة
+واالحترام المتبادل.
+
+                </p>
+              </div>
+              <br>
+              <hr>
+<br>
+              <div class="content-element-9">
+                <h5 class="mad-page-title">الإمتثال والجمارك</h5>
+                <div class="text-justify text-end lh-lg">
+                  <p>
+                    نتعامل وفق الأنظمة العراقية الرسمية الستيراد الذهب، ونضمن الإمتثال الكامل لشروط الجمارك والتوثيق، مع متابعة دقيقة
+                    لكل معاملة عبر فريق متخصص في التخليص الجمركي.
+  
+                  </p>
+                </div>
+
+              </div>
+
+
+           
+            <!--================ End of Gallery ================-->
+          </div>
+        </div>
+      </div>
+      <!--================ Footer ================-->
+      <div id="footer-placeholder"></div>
+
+    <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+      <!--================ End of Footer ================-->
+    </div>
+    <script src="vendors/modernizr.js"></script>
+    <script src="vendors/jquery-3.3.1.min.js"></script>
+    <script src="vendors/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="vendors/jquery.easing.1.3.min.js"></script>
+    <script src="vendors/monkeysan.accordion.js"></script>
+    <script src="vendors/monkeysan.tabs.min.js"></script>
+    <script src="vendors/monkeysan-tooltip/monkeysan-jquery-tooltip.js"></script>
+    <script src="vendors/monkeysan.jquery.nav.1.0.min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendors/arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
+    <script src="vendors/fancybox/jquery.fancybox.min.js"></script>
+    <script src="vendors/monkeysan.validator.min.js"></script>
+    <script src="vendors/handlebars-v4.0.5.min.js"></script>
+    <script src="vendors/retina.min.js"></script>
+    <script src="js/modules/mad.alert-box.min.js"></script>
+    <script src="js/modules/mad.newsletter-form.min.js"></script>
+    <script src="js/modules/mad.sticky-header-section.min.js"></script>
+    <script src="js/mad.app.js"></script>
+  </body>
+</html>

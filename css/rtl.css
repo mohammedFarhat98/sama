@@ -1,0 +1,599 @@
+/* ------------------------------------------------
+
+        1. Default stylesheets                      
+
+------------------------------------------------ */
+
+body{
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+th,
+td,
+table,
+form{
+    text-align: right;
+}
+
+/* ------------------------------------------------
+
+        2. General classes                      
+
+------------------------------------------------ */
+
+.align-right {
+    text-align: left;
+}
+
+.align-left {
+    text-align: right;
+}
+
+.f-right {
+    float: left;
+}
+
+.f-left {
+    float: right;
+}
+
+.alignright {
+    float: left;
+}
+
+.alignleft {
+    float: right;
+}
+
+img.alignright {
+    float: left;
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+img.alignleft {
+    float: right;
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+th,
+td,
+table,
+form,
+[class*="table-type"] table tr > td, 
+[class*="table-type"] table tr > th {
+    text-align: right;
+}
+
+/* ------------------------------------------------
+
+        3. Main
+
+------------------------------------------------ */
+
+/* Header */
+
+.mad-top-header > .mad-header-col .mad-dropdown:not(:last-child) {
+    margin-right: 0;
+    margin-left: 1.5625rem;
+}
+
+.mad-dropdown--title-icon .mad-dropdown-title .fa, .mad-dropdown--title-icon .mad-dropdown-title .fal, .mad-dropdown--title-icon .mad-dropdown-title .far, .mad-dropdown--title-icon .mad-dropdown-title .fab, .mad-dropdown--title-icon .mad-dropdown-title .fas, .mad-dropdown--title-icon .mad-dropdown-title .icon, .mad-dropdown--title-icon .mad-dropdown-title [class*="mad-font-icon-"] {
+    right: auto;
+    left: 0;
+}
+
+.mad-dropdown--title-icon .mad-dropdown-title {
+    padding-right: 0;
+    padding-left: 0.875rem;
+}
+
+.mad-dropdown-element {
+    left: auto;
+    right: -1.75rem;
+}
+
+.mad-search-area .mad-search-form input {
+    padding-left: 0;
+    padding-right: 2rem;
+}
+
+.mad-search-area .mad-search-form:after,
+.mad-dropdown-element.shopping-cart,
+.shopping-cart .mad-close-item {
+    right: auto;
+    left: 0;
+}
+
+.mad-search-form button {
+    right: 0;
+    left: auto;
+}
+
+.mad-dropdown-element.shopping-cart {
+    margin-right: 0;
+    margin-left: -1.875rem;
+}
+
+.mad-products.mad-product-small .mad-product .mad-product-description {
+    padding-left: 0;
+    padding-right: 1.25rem;
+}
+
+.mad-dropdown-element.shopping-cart {
+    text-align: right;
+}
+
+.mad-navigation .sub-menu .menu-item-has-children::after {
+    right: auto;
+    left: 0.9375rem;
+    content: "\e93b";
+}
+
+.mad-navigation .sub-menu {
+    right: -2.1875rem;
+    left: auto;
+}
+
+.mad-navigation .sub-menu .sub-menu {
+    left: auto;
+    right: 100%;
+}
+
+.mad-header.header-main .mad-navigation > li {
+    text-align: right;
+}
+
+.mad-header.style-3 .mad-header-section {
+    left: auto;
+    right: 0;
+}
+
+.mad-home-3 .mad-content {
+    padding-left: 0;
+    padding-right: 315px;
+}
+
+.mad-header.style-3 .mad-header-section .mad-logo {
+    left: auto;
+    right: 0;
+    padding-left: 0;
+    padding-right: 40px;
+}
+
+.mad-header.style-3 .mad-actions,
+.mad-header.style-3 .mad-socials {
+    right: auto;
+    left: 40px;
+    position: fixed;
+}
+
+.mad-header.style-3 .mad-navigation {
+    padding-left: 0;
+    padding-right: 2.5rem;
+}
+
+.rev-slider li img {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+/* Shortcodes */
+
+.mad-panels-title > button::after, .mad-panels-title > button::before {
+    right: auto;
+    left: 1.625rem;
+}
+
+.mad-panels-title > button {
+    padding-left: 4.5rem;
+    padding-right: 1.625rem;
+}
+
+.mad-alert-box-close {
+    right: auto;
+    left: 1.325rem;
+}
+
+.mad-alert-box-inner {
+    padding-left: 3.8rem;
+    padding-right: 1.75rem;
+}
+
+[class*="btn"].with-line span, .read-more {
+    padding-right: 0;
+    padding-left: 25px;
+}
+
+[class*="btn"].with-line:hover span, .read-more:hover {
+    padding-left: 0;
+    padding-right: 25px;
+}
+
+[class*="btn"] span i, .read-more:after {
+    right: auto;
+    left: 0;
+}
+
+[class*="btn"].with-line:hover span i, .read-more:hover:after {
+    right: auto;
+    left: calc(100% - 15px);
+}
+
+.mad-back-to-top {
+    right: auto;
+    left: 3%;
+}
+
+.mad-banner:not(.style-3) .mad-banner-inner {
+    right: auto;
+    left: 56px;
+}
+
+.mad-banner.style-2 .mad-banner-inner {
+    right: auto;
+    left: 3.25rem;
+}
+
+.mad-banner.style-2.left-side .mad-banner-inner {
+    left: auto;
+    right: 3.25rem;
+}
+
+.mad-banner > img {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.mad-banner.style-3:after {
+    left: auto;
+    right: 0;
+    margin-right: 0.4375rem;
+    margin-left: 0;
+}
+
+.mad-banner.style-3 .mad-banner-inner,
+.mad-progress-bar-title::after {
+    right: auto;
+    left: 0;
+}
+
+.mad-counters:not(.icon-top) .mad-counter-icon {
+    padding-right: 0;
+    padding-left: 1.875rem;
+}
+
+.mad-icon-boxes.hr-type .mad-icon-box > .mad-icon-box-icon {
+    margin-right: 0;
+    margin-left: 1.75rem;
+}
+
+.mad-image-boxes.style-2 .mad-image-box {
+    padding-left: 0;
+    padding-right: 2.625rem;
+}
+
+.mad-image-boxes.style-2:not(.mad-box-small) .mad-image-box .mad-image-cat, .mad-image-cat,
+.mad-progress-bar-indicator {
+    left: auto;
+    right: 0;
+}
+
+.mad-image-boxes.full-width .mad-image-box .image-box-content {
+    padding-left: 0;
+    padding-right: 3.5rem;
+}
+
+.mad-progress-bar-title {
+    padding-right: 0;
+    padding-left: 6.25rem;
+}
+
+.mad-tabs--tour-sections:not(.mad-tabs--unstyled) .mad-tabs-nav {
+    float: right;
+}
+
+.mad-tabs.mad-tabs--tour-sections:not(.mad-tabs--unstyled) .mad-tabs-nav {
+    margin-right: 0;
+    margin-left: -1px;
+}
+
+.mad-testimonial .mad-testimonial-cat img:not(:last-child) {
+    margin-right: 0;
+    margin-left: 0.875rem;
+}
+
+.mad-testimonials.style-2 .mad-test-cat {
+    left: auto;
+    right: 104%;
+}
+
+.mad-testimonials.style-2 {
+    margin-right: 0;
+    margin-left: 2.625rem;
+}
+
+ .mad-dropcap > *:first-child:first-letter {
+    float: right;
+    margin-right: 0;
+    margin-left: 1.1rem;
+ }
+
+.mad-list--icon > li > .icon, .mad-entity-content ul:not(.mad-list--icon):not(.mad-list--unstyled) > li::before {
+    left: auto;
+    right: 1px;
+}
+
+.mad-list--icon > li, .mad-entity-content ul:not(.mad-list--icon):not(.mad-list--unstyled) > li {
+    padding-left: 0;
+    padding-right: 2rem;
+}
+
+/* Content elements */
+
+.mad-newsletter-form button {
+    right: auto;
+    left: 0;
+}
+
+input[type="text"], input[type="search"], input[type="date"], input[type="datetime-local"], input[type="email"], input[type="file"], input[type="month"], input[type="number"], input[type="password"], input[type="tel"], input[type="time"], input[type="url"], input[type="week"], textarea, .mad-custom-select .mad-selected-option, .select2-container--milenia .select2-selection {
+    padding-right: 0;
+    padding-left: 1.25rem;
+}
+
+.mad-tabs.mad-shop:not(.mad-tabs--unstyled) .mad-tabs-nav > span:not(:last-child) {
+    margin-right: 0;
+    margin-left: 2.1875rem;
+}
+
+.mad-label {
+    left: auto;
+    right: 0;
+}
+
+.mad-testimonials:not(.style-2) .owl-carousel .mad-testimonial {
+    padding-right: 0;
+    padding-left: 1.875rem;
+}
+
+.image-box-actions i {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.mad-image-box-media .read-more {
+    left: auto;
+    right: 1.75rem;
+}
+
+.mad-info-block i {
+    padding-right: 0;
+    padding-left: 0.875rem;
+}
+
+.mad-instafeed .mad-image-cat {
+    margin-left: 0;
+    margin-right: 2.5rem;
+}
+
+.mad-instafeed.style-2 {
+    padding-left: 0;
+    padding-right: 5rem;
+}
+
+.mad-custom-select .mad-selected-option::after, .mad-custom-select .mad-selected-option::before,
+.mad-loc-input > button {
+    left: 0;
+    right: auto;
+}
+
+.mad-product.mad-product-single .mad-rating:not(:last-child),
+.mad-share-btns > * i {
+    margin-right: 0;
+    margin-left: 0.625rem;
+}
+
+.comment-author-avatar {
+    float: right;
+}
+
+.comment-author-info {
+    padding-left: 0;
+    padding-right: 6.5rem;
+}
+
+.product-meta span {
+    display: inline-block;
+}
+
+.mad-vendor-item .vendor-author {
+    right: auto;
+    left: 28px;
+}
+
+.mad-vendor-item.single-vendor .vendor-author {
+    left: auto;
+}
+
+.mad-vendor-item.single-vendor .vendor-title-wrap .mad-vendor-title {
+    padding-left: 0;
+    padding-right: 28px;
+}
+
+.mad-pagination .licon-arrow-left:before {
+    content: "\e944";
+}
+
+.mad-pagination .licon-arrow-right:before {
+    content: "\e943";
+}
+
+.shop-cart-form .mad-product .mad-close-item {
+    margin-right: 0;
+    margin-left: 1.25rem;
+}
+
+.mad-singlefield-form input {
+    margin-right: 0;
+    margin-left: 0.4375rem;
+}
+
+input[type="checkbox"] + label[for], input[type="radio"] + label[for] {
+    padding-left: 0;
+    padding-right: 2.865rem;
+}
+
+input[type="checkbox"] + label[for]::before, input[type="radio"] + label[for]::before {
+    left: auto;
+    right: 0;
+}
+
+input[type="checkbox"] + label[for]::after, input[type="radio"] + label[for]::after{
+    left: auto;
+    right: 0.0625rem;
+}
+
+input[type="radio"] + label[for]::after {
+    left: auto;
+    right: 0.5625rem;
+}
+
+.mad-page-nav > .mad-nav-right {
+    text-align: left;
+}
+
+.mad-entity-link-element {
+    padding-left: 1.75rem;
+    padding-right: 7rem;
+}
+
+.mad-entity-link-element .fa, .mad-entity-link-element .fal, .mad-entity-link-element .far, .mad-entity-link-element .fab, .mad-entity-link-element .fas, .mad-entity-link-element .icon, .mad-entity-link-element [class*="mad-font-icon-"]{
+    left: auto;
+    right: 3.5rem;
+}
+
+.mad-image-boxes.mad-image-big:not(.mad-box-small):not(.mad-single-box) .image-box-content {
+    margin-left: 0;
+    margin-right: 2.625rem;
+}
+
+.owl-carousel.mad-owl-nav .owl-nav {
+    right: auto;
+    left: 1.75rem;
+}
+
+.mad-image-boxes.box-var-2:not(.mad-box-small) .image-box-content,
+.mad-testimonials.mad-no-cat {
+    margin: 0!important;
+}
+
+.box-actions-btns > *:not(:last-child) {
+    margin-left: 0.875rem;
+    margin-right: 0;
+}
+
+.comment .children {
+    padding-left: 0;
+    padding-right: 6.1875rem;
+}
+
+.comment .children > li::before {
+    left: auto;
+    right: -3.9375rem;
+    border-width: 0px 1px 1px 0px;
+}
+
+.mad-scale {
+    flex-direction: row-reverse;
+}
+
+.mad-scale > input {
+    padding-left: 0;
+    padding-right: 1.25rem;
+    text-align: left;
+}
+
+/* ------------------------------------------------
+
+        4. Media queries
+
+------------------------------------------------ */
+
+/* Bootstrap rtl changes */
+
+@media only screen and (max-width:1199px){
+
+    .mad-home-3 .mad-content {
+        padding: 0;
+    }
+
+    .mad-header.style-3 .mad-mobile-nav-btn {
+        left: auto;
+        right: 200px!important;
+    }
+
+    .mad-header.style-3 .mad-navigation-container .mad-navigation {
+        transform: translateX(100%)!important;
+    }
+
+    .mad-header.style-3 .mad-navigation-container .mad-navigation {
+        transform: translateX(0)!important;
+    }
+
+}
+
+@media (min-width: 1200px){
+
+    .mad-header.style-3 .mad-navigation .sub-menu {
+        left: auto!important;
+        right: 100%!important;
+        padding-left: 0!important;
+        padding-right: 2.5rem!important;
+    }
+
+    .mad-navigation .mega-menu > .sub-menu > li .sub-menu {
+        left: auto!important;
+        right: auto!important;
+        padding: 0!important;
+    }
+
+}
+
+@media only screen and (max-width:991px){
+
+
+}
+
+@media (min-width: 992px){
+
+
+}
+
+@media only screen and (min-width:769px){
+
+    .mad-navigation > li.menu-item:not(.mega-menu) .sub-menu .sub-menu {
+        margin-left: 0!important;
+        margin-right: 15px!important;
+    }
+
+}
+
+@media (max-width: 767px){
+
+
+}
+
+@media only screen and (min-width: 480px){
+
+
+}

@@ -1,0 +1,75 @@
+<!-- header.html -->
+<header id="mad-header" class="mad-header mad-header--transparent mad-header--transparent-single">
+    <!--================ Section ================-->
+    
+    <div class="mad-header-section mad-header-section--sticky-xl">
+      <div class="mad-header-col">
+        <a href="index.html" class="mad-ln--independent"><img src="images/logo2.png" alt=""></a>
+      </div>
+      <div class="mad-header-col">
+        <div class="mad-header-items">
+          <div>
+            <nav class="mad-navigation-container">
+              <ul class="mad-navigation mad-navigation--vertical-sm">
+                <li class="menu-item current-menu-item"><a href="index.html" class="mad-ln--independent">الرئيسية</a></li>
+                <li class="menu-item"><a href="pages_about.html" class="mad-ln--independent">من نحن</a></li>
+                <li class="menu-item mega-menu"><a href="services.html" class="mad-ln--independent">خدماتنا</a></li>
+                 <li class="menu-item"><a href="portfolio.html" class="mad-ln--independent">منتجاتنا</a></li>
+                 <li class="menu-item"><a href="pages_contact.html" class="mad-ln--independent">تواصل معنا</a></li>
+                
+                <li class="menu-item">
+
+                <div class="mad-socials">
+                    <ul class="mad-social-icons">
+                      <li><a href="#" class="mad-ln--independent"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#" class="mad-ln--independent"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="#" class="mad-ln--independent"><i class="fab fa-twitter"></i></a></li>
+                    </ul></li>
+              </ul>
+            </nav>
+          </div>
+         
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const path = window.location.pathname;
+      const isAbout = path.includes("pages_about.html");
+      const isContact = path.includes("pages_contact.html");
+  
+      if (isAbout || isContact) {
+        setTimeout(() => {
+          // تغيير لون النصوص في الهيدر
+          document.querySelectorAll(
+            ".mad-navigation a, \
+            .mad-sub-navigation a:hover, \
+            .mad-header-menu-btn, \
+            .mad-weather-indicator sup span, \
+            .mad-icon-btn, \
+            .mad-dropdown--languages .mad-dropdown-title"
+          ).forEach(el => {
+            el.style.setProperty("color", "#ffffff", "important");
+          });
+  
+          // تغيير لون خلفية الهيدر عند التمرير
+          const header = document.querySelector(".mad-header-section--sticky-xl");
+  
+          if (header) {
+            window.addEventListener("scroll", () => {
+              if (header.classList.contains("mad-header-section--sticked")) {
+                header.style.setProperty("background", "#000000", "important");
+              }
+            });
+          }
+  
+        }, 500); // تأخير بسيط بعد تحميل الهيدر
+      }
+    });
+  </script>
+  
+  
